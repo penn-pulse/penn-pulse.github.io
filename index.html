@@ -75,17 +75,9 @@
 <section id="vision" class="section bg-alt">
   <div class="container">
     <h2>Our Vision</h2>
-    <div class="row mb-4 align-items-center">
-      <div class="col-lg-6 col-12 mb-3 mb-lg-0">
-        <p>Retrospective studies indicate that poor clinical monitoring is a primary cause of preventable deaths. Current monitoring systems in the ICU are unable to identify impending cardiac arrests despite post-hoc analysis by cardiologists revealing high-risk signs. Moreover, they suffer from false alarm rates of over 85%, leading to alarm fatigue.</p>
-      </div>
-      <div class="col-lg-5 col-12 text-center">
-        <img src="images/alarm-fatigue-stats.jpg" alt="Alarm Fatigue Stats" class="img-fluid" style="max-width: 400px;">
-      </div>
-    </div>
     <div class="row mb-4">
       <div class="col-12">
-        <p>PLUSE is a cross-disciplinary initiative that aims to address this gap by combining advanced AI modeling with high-resolution, real-time, ECG data from patients admitted to the ICU. Our goal is to develop AI-driven models that provide timely, clinically actionable predictions while substantially reducing false alarms. Even a 30-second advance notice can dramatically improve mortality outcomes.</p>
+        <p>Retrospective studies indicate that poor clinical monitoring is a primary cause of preventable deaths. Current monitoring systems in the ICU are unable to identify impending cardiac arrests despite post-hoc analysis by cardiologists revealing high-risk signs. Moreover, they suffer from false alarm rates of over 85%, leading to alarm fatigue.</p>
       </div>
     </div>
     <div class="row align-items-center mb-4 flex-column flex-lg-row">
@@ -145,7 +137,8 @@
     <div class="h3 fw-bold mb-4 text-center" style="color:#1976d2;">What's Missing in Current AI Solutions?</div>
     <div class="row mb-4 align-items-center">
       <div class="col-lg-7 col-12 mb-3 mb-lg-0">
-        <p>The quality of data is central to the success of any AI solution. In contrast to domains like code generation or protein folding where AI has been remarkably successful due to abundantly available data, public ECG datasets offer only 10-second or single-lead ECGs, which are inadequate to build a generative ECG model let alone predict cardiac arrest sufficiently in advance.</p>
+        <p><span class="fw-bold">Insufficient Data Quality</span><br>
+        The quality of data is central to the success of any AI solution. In contrast to domains like code generation or protein folding where AI has been remarkably successful due to abundantly available data, public ECG datasets offer only 10-second or single-lead ECGs, which are inadequate to build a generative ECG model let alone predict cardiac arrest sufficiently in advance.</p>
       </div>
       <div class="col-lg-5 col-12 text-center">
         <img src="images/distribution-of-studies.png" alt="Distribution of Studies" class="img-fluid" style="max-width: 500px;">
@@ -153,10 +146,20 @@
     </div>
     <div class="row mb-4 align-items-center">
       <div class="col-lg-7 col-12 mb-3 mb-lg-0 order-lg-2">
-        <p>Training AI models on such data results in performance levels that fall short of clinical utility. For example, a deep learning model published in early 2025 reported a specificity of just 31% when sensitivity was fixed at 95%, corresponding to a false positive rate of 69%. Conversely, prompting state-of-the-art deep learning models is prone to hallucinations.</p>
+        <p><span class="fw-bold">Low Accuracy and Hallucinations</span><br>
+        Training AI models on such data results in performance levels that fall short of clinical utility. For example, a deep learning model published in early 2025 reported a specificity of just 31% when sensitivity was fixed at 95%, corresponding to a false positive rate of 69%. Conversely, prompting state-of-the-art deep learning models is prone to hallucinations.</p>
       </div>
       <div class="col-lg-5 col-12 text-center order-lg-1 mb-3 mb-lg-0">
         <img src="images/o3-hallucination.png" alt="Hallucination Example" class="img-fluid" style="max-width: 350px;">
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-lg-7 col-12 mb-3 mb-lg-0">
+        <p><span class="fw-bold">Lack of Clinical Usefulness</span><br>
+        Lastly, many efforts in this space suffer from a disconnect between clinical realities and technical development, hindering translational integration.</p>
+      </div>
+      <div class="col-lg-5 col-12 text-center">
+        <img src="images/alarm-fatigue-stats.jpg" alt="Alarm Fatigue Stats" class="img-fluid" style="max-width: 400px;">
       </div>
     </div>
   </div>
