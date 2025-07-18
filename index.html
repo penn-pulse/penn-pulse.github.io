@@ -140,7 +140,7 @@
     <div class="h3 fw-bold mb-4 text-center">What's Missing in Current AI Solutions?</div>
     <div class="row mb-4 align-items-center">
       <div class="col-lg-7 col-12 mb-3 mb-lg-0">
-        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #dc3545; font-size: 1.2em;">⛔</span>Insufficient Data Quality</span>
+        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #dc3545; font-size: 1.2em;">⚠️</span>Insufficient Data Quality</span>
         The quality of data is central to the success of any AI solution. In contrast to domains like code generation or protein folding—where AI has thrived thanks to abundant high-quality data—<b>public ECG datasets typically contain only 10-second or single-lead recordings</b>. These are insufficient to train generative models or to predict cardiac arrest with adequate lead time.</p>
       </div>
       <div class="col-lg-5 col-12 text-center">
@@ -149,7 +149,7 @@
     </div>
     <div class="row mb-4 align-items-center">
       <div class="col-lg-7 col-12 mb-3 mb-lg-0 order-lg-2">
-        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #dc3545; font-size: 1.2em;">⛔</span>Low Accuracy and Hallucinations</span>
+        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #dc3545; font-size: 1.2em;">⚠️</span>Low Accuracy and Hallucinations</span>
         When trained on such limited data, AI models fall short of clinical utility.
         For instance, <a href="https://pubmed.ncbi.nlm.nih.gov/40110219/">a deep learning model published in early 2025</a> reported a specificity of just 31% when sensitivity was fixed at 95%—a false positive rate of 69%.
         Compounding the issue, prompting state-of-the-art deep learning models like OpenAI's o3 directly on these datasets can lead to hallucinations and unreliable outputs.</p>
@@ -160,7 +160,7 @@
     </div>
     <div class="row mb-4 align-items-center">
       <div class="col-lg-7 col-12 mb-3 mb-lg-0">
-        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #dc3545; font-size: 1.2em;">⛔</span>Lack of Clinical Usefulness</span>
+        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #dc3545; font-size: 1.2em;">⚠️</span>Lack of Clinical Usefulness</span>
         As a result, many AI systems in this space fail to translate into meaningful clinical applications.
         The disconnect between technical development and real-world clinical considerations—such as alarm fatigue or workflow integration—prevents these models from being deployed effectively in the ICU.</p>
       </div>
@@ -175,19 +175,45 @@
 <section id="technology" class="section bg-alt">
   <div class="container">
     <div class="h3 fw-bold mb-4 text-center">Our Technology</div>
-    <ul>
-      <li>10,000+ ICU patients monitored with 3-hour ECG segments sampled at 250Hz</li>
-      <li>Neurosymbolic AI combining deep learning and clinical reasoning</li>
-      <li>Text-based explanations and symbolic summaries of ECG risk patterns</li>
-    </ul>
+    <div class="row mb-4">
+      <div class="col-12">
+        <p>Our approach comprises three fundamental pillars: (1) generating the largest high-quality long-horizon ECG dataset; (2) building accurate and explainable predictive AI models; and (3) translational integration and clinical validation.</p>
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-lg-7 col-12 mb-3 mb-lg-0">
+        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #28a745; font-size: 1.2em;">✓</span>High-Quality Long-Horizon ECG Dataset</span>
+        We will leverage novel, high-resolution, long-horizon ECG data at Penn Medicine, collected from monitoring 10,000 patients. These data, sampled at 250Hz, will provide the crucial fine-grained information that are unavailable in any public dataset.</p>
+      </div>
+      <div class="col-lg-5 col-12 text-center">
+        <img src="images/dataset-comparison.png" alt="Dataset Comparison" class="img-fluid" style="max-width: 500px;">
+      </div>
+    </div>
+    <div class="row mb-4 align-items-center">
+      <div class="col-lg-7 col-12 mb-3 mb-lg-0 order-lg-2">
+        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #28a745; font-size: 1.2em;">✓</span>Accurate and Explainable Predictive AI Models</span>
+        We have unique expertise in <b>neurosymbolic AI</b>—an approach that blends deep learning's ability to detect complex physiological patterns with symbolic reasoning that provides guardrails by grounding predictions in clinical reality. Their work is rooted in mathematical rigor, systems engineering, and state-of-the-art methods for reliability and interpretability—making them uniquely equipped to build models that are not only accurate but also deployable in high-stakes settings.</p>
+      </div>
+      <div class="col-lg-5 col-12 text-center order-lg-1 mb-3 mb-lg-0">
+        <img src="images/neurosymbolic-ecg.png" alt="Neurosymbolic ECG" class="img-fluid" style="max-width: 400px;">
+      </div>
+    </div>
+        <div class="row mb-4">
+      <div class="col-12">
+        <p><span class="fw-bold h5 d-block mb-2"><span class="me-2" style="color: #28a745; font-size: 1.2em;">✓</span>Translational Integration and Clinical Validation</span>
+        Our clinical colleagues have extensive expertise in developing and validating prognostic models for sudden cardiac death and fatal cardiovascular disease.
+        Consequently, this collaboration is deeply integrated across both domains—from acquiring and interpreting raw telemetry data to designing models that support clinical decision-making.
+        Our designs are modularly integrated into platforms for clinical evaluation.
+        This initiative will include a shared computational platform for generative design and automated experimental facilities for high-throughput analysis, with the ultimate goal of translating our findings directly into improved patient outcomes.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Team Section -->
 <section id="team" class="section">
   <div class="container">
-    <div class="h3 fw-bold mb-5 text-center">The Team</div>
-    
+    <div class="h3 fw-bold mb-4 text-center">The Team</div>
     <!-- Penn Engineering Section -->
     <div class="bg-penn-engineering p-4 rounded-4 mb-4">
       <div class="row">
