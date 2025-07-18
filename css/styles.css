@@ -1,5 +1,14 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .section {
@@ -87,5 +96,37 @@ html {
 @media (min-width: 992px) {
   .h6.h5-lg {
     font-size: 1.5rem !important;
+  }
+} 
+
+/* Mobile responsiveness fixes */
+@media (max-width: 767px) {
+  .pulse-title {
+    font-size: 3.5rem;
+  }
+  .pulse-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  /* Ensure no horizontal overflow on mobile */
+  .container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Fix image overflow */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 } 
