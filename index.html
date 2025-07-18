@@ -84,12 +84,14 @@
     </div>
     <div class="row mb-4">
       <div class="col-12">
-        <p>PLUSE is a cross-disciplinary initiative that aims to address this gap by combining advanced AI modeling with high-resolution, real-time, ECG data from patients admitted to the ICU. Our goal is to develop AI-driven models that provide timely, clinically actionable predictions while substantially reducing false alarms.</p>
+        <p>PLUSE is a cross-disciplinary initiative that aims to address this gap by combining advanced AI modeling with high-resolution, real-time, ECG data from patients admitted to the ICU. Our goal is to develop AI-driven models that provide timely, clinically actionable predictions while substantially reducing false alarms. Even a 30-second advance notice can dramatically improve mortality outcomes.</p>
       </div>
     </div>
     <div class="row align-items-center mb-4 flex-column flex-lg-row">
       <div class="col-lg-6 col-12 mb-3 mb-lg-0">
-        <div class="h4 fw-bold">Can artificial intelligence help predict and prevent cardiac arrest before it happens?</div>
+        <div class="ai-question text-center p-3 rounded shadow-sm mb-3 fw-bold h4">
+          Can artificial intelligence help predict and prevent cardiac arrest before it happens?
+        </div>
       </div>
       <div class="col-lg-5 col-12 text-center">
         <img src="images/ecg-ca-prediction-task.png" alt="ECG Cardiac Arrest Prediction Task" class="img-fluid">
@@ -97,21 +99,40 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="fs-5 mb-3">The potential for real-world impact is monumental!</p>
-        <ul class="list-unstyled">
-          <li class="d-flex align-items-start mb-2">
-            <span class="me-3 text-success fs-4">💰</span>
-            <span>Low marginal cost: ICU systems already provide continuous multi-lead ECG monitoring.</span>
-          </li>
-          <li class="d-flex align-items-start mb-2">
-            <span class="me-3 text-primary fs-4">⚡</span>
-            <span>Rapid response to alarm: ECG is high-frequency and continuous.</span>
-          </li>
-          <li class="d-flex align-items-start mb-2">
-            <span class="me-3 text-info fs-4">🌐</span>
-            <span>Likely more generalizable: ECG is a high-fidelity reflection of patient's true state, standardized across hospitals, and not confounded with treatment unlike EHR.</span>
-          </li>
-        </ul>
+        <p>The potential of successfully deploying such models is very high:</p>
+    
+        <div class="row g-3 mb-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card h-100">
+              <div class="card-header fw-bold" style="color:#263238;">
+                <span class="me-2 d-inline-flex justify-content-center align-items-center" style="background:#1976d2; width: 2em; height: 2em; border-radius: 50%;"><span style="color:#fff; font-size:1.2em;">&#10003;</span></span>Low marginal cost
+              </div>
+              <div class="card-body">
+                ICU systems already provide continuous multi-lead ECG monitoring.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card h-100">
+              <div class="card-header fw-bold" style="color:#263238;">
+                <span class="me-2 d-inline-flex justify-content-center align-items-center" style="background:#1976d2; width: 2em; height: 2em; border-radius: 50%;"><span style="color:#fff; font-size:1.2em;">&#10003;</span></span>Rapid response to alarms
+              </div>
+              <div class="card-body">
+                ECG is sampled at high frequency, delivering high-resolution signals orders of magnitude finer than vital-sign snapshots.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="card h-100">
+              <div class="card-header fw-bold" style="color:#263238;">
+                <span class="me-2 d-inline-flex justify-content-center align-items-center" style="background:#1976d2; width: 2em; height: 2em; border-radius: 50%;"><span style="color:#fff; font-size:1.2em;">&#10003;</span></span>Broad generalizability
+              </div>
+              <div class="card-body">
+                ECG captures cardiac signals which are uniform across hospitals and largely treatment-agnostic unlike EHR data.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
