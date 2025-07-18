@@ -60,10 +60,10 @@ html {
 } 
 
 .bg-penn-engineering {
-  background-color: #f6f7fa;
+  background-color: #e3f2fd;
 }
 .bg-penn-medicine {
-  background-color: #f3f6f9;
+  background-color: #e8f5e8;
 }
 
 .team-logo-col {
@@ -76,5 +76,16 @@ html {
   .team-logo-col {
     min-width: 0;
     margin-bottom: 1.5rem;
+  }
+} 
+
+/* Responsive heading sizes for team members */
+.h6.h5-lg {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .h6.h5-lg {
+    font-size: 1.5rem !important;
   }
 } 
