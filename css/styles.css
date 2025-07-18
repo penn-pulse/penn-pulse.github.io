@@ -15,11 +15,6 @@ body {
   padding: 40px 0;
 }
 
-.bg-hero {
-  color: white;
-  text-align: center;
-}
-
 .bg-alt {
   background-color: #f6f7fa;
 }
@@ -38,7 +33,7 @@ body {
   }
 }
 
-/* Large screens */
+/* Hero section typography */
 .pulse-title {
   font-size: 9rem;
 }
@@ -47,126 +42,73 @@ body {
   font-size: 1.9rem;
 }
 
-/* Medium screens */
-@media (max-width: 991px) {
-  .pulse-title {
-    font-size: 5rem;
-  }
-  .pulse-subtitle {
-    font-size: 1.8rem;
-  }
-}
-
-/* Small screens - stack everything */
-@media (max-width: 767px) {
-  .pulse-title {
-    font-size: 3.5rem;
-  }
-  .pulse-subtitle {
-    font-size: 1.5rem;
-  }
-} 
-
+/* Team section backgrounds */
 .bg-penn-engineering {
   background-color: #e3f2fd;
 }
+
 .bg-penn-medicine {
   background-color: #e8f5e8;
 }
 
-.team-logo-col {
-  min-width: 120px;
-  text-align: center;
-  vertical-align: middle;
+/* AI question box */
+.ai-question {
+  background: #f8fafc;
+  border: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+  color: #00897b;
 }
 
-@media (max-width: 991px) {
-  .team-logo-col {
-    min-width: 0;
-    margin-bottom: 1.5rem;
-  }
-} 
+/* Section headers */
+.h3.fw-bold.mb-4.text-center,
+.h3.fw-bold.mb-5.text-center {
+  color: #2c3e50;
+}
+
+/* Sub-headers within sections */
+.fw-bold.h5.d-block.mb-2 {
+  color: #1976d2;
+}
 
 /* Responsive heading sizes for team members */
 .h6.h5-lg {
   font-size: 1.25rem;
 }
 
-@media (min-width: 992px) {
-  .h6.h5-lg {
-    font-size: 1.5rem !important;
-  }
-} 
-
-/* Mobile responsiveness fixes */
-@media (max-width: 767px) {
-  .pulse-title {
-    font-size: 3.5rem;
-  }
-  .pulse-subtitle {
-    font-size: 1.5rem;
-  }
-} 
-
-.ai-question {
-  background: #f8fafc;
-  border: 1px solid #e0e0e0;
-  font-size: 1.1rem;
-  color: #00897b; /* modern teal */
-}
-
+/* Large screens */
 @media (min-width: 992px) {
   .ai-question {
     font-size: 1.6rem;
   }
+  
+  .h6.h5-lg {
+    font-size: 1.5rem !important;
+  }
 }
 
+/* Medium screens */
+@media (max-width: 991px) {
+  .pulse-title {
+    font-size: 5rem;
+  }
+  
+  .pulse-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small screens */
 @media (max-width: 767px) {
+  .pulse-title {
+    font-size: 3.5rem;
+  }
+  
+  .pulse-subtitle {
+    font-size: 1.5rem;
+  }
+  
   .ai-question {
     font-size: 1rem;
     padding: 1.25rem 0.75rem;
   }
-} 
-
-@media (min-width: 992px) {
-  .ai-impact-emphasis {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .ai-impact-emphasis {
-    font-size: 0.92rem;
-  }
-}
-
-.ai-impact-box {
-  background: #e0f7fa;
-  border: 2px solid #26c6da;
-  box-shadow: 0 4px 16px rgba(38,198,218,0.10);
-  margin-top: 0.5rem;
-} 
-
-.ai-bullet-box {
-  background: #f6f7fa;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-  margin-bottom: 0.25rem;
-} 
-
-.ai-bullet-list li {
-  position: relative;
-  padding-left: 1.5em;
-}
-
-.ai-bullet-list li::before {
-  content: '';
-  position: absolute;
-  left: 0.3em;
-  top: 0.7em;
-  width: 0.6em;
-  height: 0.6em;
-  background: #00897b;
-  border-radius: 50%;
-  display: inline-block;
 } 
