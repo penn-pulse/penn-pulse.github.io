@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.bg-hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/ECG_principle_slow.gif/1200px-ECG_principle_slow.gif') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.bg-alt {
+  background-color: #f6f7fa;
+}
+
+.section img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .section img.img-fluid {
+    max-width: 500px;
+  }
+}
+
+/* Large screens */
+.pulse-title {
+  font-size: 9rem;
+}
+
+.pulse-subtitle {
+  font-size: 1.9rem;
+}
+
+/* Medium screens */
+@media (max-width: 991px) {
+  .pulse-title {
+    font-size: 5rem;
+  }
+  .pulse-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small screens - stack everything */
+@media (max-width: 767px) {
+  .pulse-title {
+    font-size: 3.5rem;
+  }
+  .pulse-subtitle {
+    font-size: 1.5rem;
+  }
+} 
+
+.bg-penn-engineering {
+  background-color: #f6f7fa;
+}
+.bg-penn-medicine {
+  background-color: #f3f6f9;
+}
+
+.team-logo-col {
+  min-width: 120px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+  .team-logo-col {
+    min-width: 0;
+    margin-bottom: 1.5rem;
+  }
+} 
