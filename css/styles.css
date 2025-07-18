@@ -16,7 +16,6 @@ body {
 }
 
 .bg-hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/ECG_principle_slow.gif/1200px-ECG_principle_slow.gif') center/cover no-repeat;
   color: white;
   text-align: center;
 }
@@ -106,27 +105,5 @@ body {
   }
   .pulse-subtitle {
     font-size: 1.5rem;
-  }
-  
-  /* Ensure no horizontal overflow on mobile */
-  .container, .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  [class*="col-"] {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  /* Fix image overflow */
-  img {
-    max-width: 100% !important;
-    height: auto !important;
   }
 } 
