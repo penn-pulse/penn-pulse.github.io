@@ -16,6 +16,11 @@ body {
   background-color: #1e3a5f !important;
 }
 
+/* Custom hero background */
+.bg-hero {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a5f 100%) !important;
+}
+
 /* Sub-section headers */
 .subsection-header {
   color: #1e3a5f !important;
