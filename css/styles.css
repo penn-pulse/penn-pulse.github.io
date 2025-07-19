@@ -11,6 +11,16 @@ body {
   box-sizing: border-box;
 }
 
+/* Custom navbar color */
+.bg-navbar {
+  background-color: #1e3a5f !important;
+}
+
+/* Sub-section headers */
+.subsection-header {
+  color: #1e3a5f !important;
+}
+
 .section {
   padding: 40px 0;
 }
