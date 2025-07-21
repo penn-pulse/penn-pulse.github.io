@@ -66,6 +66,28 @@ body {
   background-color: #e8f5e8;
 }
 
+/* Team section logo column styling */
+#team .col-lg-3 {
+  border-right: 2px solid #d0d0d0;
+  padding-right: 2rem;
+}
+
+#team .col-lg-9 {
+  padding-left: 2rem;
+}
+
+/* Convert vertical line to horizontal on mobile when layout becomes single column */
+@media (max-width: 991px) {
+  #team .col-lg-3 {
+    border-right: none;
+    border-bottom: 2px solid #d0d0d0;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    min-height: 120px !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
 /* AI question box */
 .ai-question {
   background: #f8fafc;
